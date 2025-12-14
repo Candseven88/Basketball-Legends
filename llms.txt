@@ -50,6 +50,8 @@ Run towards the basket and press the shoot button (B or L) when close to the hoo
 - Block Blast
 - Drift Boss
 - Space Waves
+- Slope Game
+- Crazy Cattle 3D
 
 ## Site Information
 

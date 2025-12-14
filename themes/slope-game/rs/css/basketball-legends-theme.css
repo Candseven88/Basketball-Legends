@@ -789,3 +789,290 @@ h1, h2, h3, h4, h5, h6,
 .game-item:hover::before {
     transform: scaleX(1);
 }
+
+
+/* ============================================
+   NAVBAR LAYOUT FIX - Prevent Logo Squeeze
+   ============================================ */
+.navbar {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+    padding: 8px 0 !important;
+    gap: 12px !important;
+    flex-wrap: nowrap !important;
+}
+
+/* Logo - Compact size to not block navigation */
+.navbar .logo {
+    flex-shrink: 0 !important;
+    min-width: auto !important;
+    max-width: 160px !important;
+}
+
+.navbar .logo a {
+    display: block !important;
+}
+
+.navbar .logo img {
+    height: 36px !important;
+    max-height: 36px !important;
+    width: auto !important;
+    max-width: 140px !important;
+    object-fit: contain !important;
+}
+
+/* Navigation links - flexible but with limits */
+.nav-links {
+    flex: 1 !important;
+    display: flex !important;
+    justify-content: center !important;
+    min-width: 0 !important;
+}
+
+.list_links {
+    display: flex !important;
+    align-items: center !important;
+    gap: 4px !important;
+    list-style: none !important;
+    margin: 0 !important;
+    padding: 0 !important;
+    flex-wrap: nowrap !important;
+}
+
+.list_links li a {
+    padding: 6px 10px !important;
+    font-size: 13px !important;
+    white-space: nowrap !important;
+}
+
+/* Right side controls - fixed width */
+.navbar-right {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    flex-shrink: 0 !important;
+}
+
+/* ============================================
+   LANGUAGE SWITCHER - Simple Style (No Arrow)
+   ============================================ */
+.lang-switcher {
+    position: relative !important;
+    flex-shrink: 0 !important;
+    display: inline-flex !important;
+}
+
+.lang-btn {
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    padding: 8px 14px !important;
+    background: #F5F7FA !important;
+    border: 1px solid #E1E8ED !important;
+    border-radius: 20px !important;
+    color: #2C3E50 !important;
+    font-size: 13px !important;
+    font-weight: 600 !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    white-space: nowrap !important;
+    height: 36px !important;
+    box-sizing: border-box !important;
+}
+
+.lang-btn:hover {
+    background: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+    color: white !important;
+}
+
+/* Globe icon */
+.lang-btn svg:first-of-type {
+    width: 16px !important;
+    height: 16px !important;
+    stroke: currentColor !important;
+    flex-shrink: 0 !important;
+}
+
+/* Hide the arrow completely */
+.lang-btn .arrow,
+.lang-btn svg.arrow,
+.lang-btn svg:last-of-type:not(:first-of-type) {
+    display: none !important;
+}
+
+.lang-dropdown {
+    position: absolute !important;
+    top: calc(100% + 6px) !important;
+    right: 0 !important;
+    min-width: 140px !important;
+    background: #FFFFFF !important;
+    border: 1px solid #E1E8ED !important;
+    border-radius: 8px !important;
+    padding: 6px !important;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
+    opacity: 0 !important;
+    visibility: hidden !important;
+    transform: translateY(-8px) !important;
+    transition: all 0.2s ease !important;
+    z-index: 1001 !important;
+}
+
+.lang-switcher:hover .lang-dropdown {
+    opacity: 1 !important;
+    visibility: visible !important;
+    transform: translateY(0) !important;
+}
+
+.lang-option {
+    display: flex !important;
+    align-items: center !important;
+    gap: 8px !important;
+    padding: 8px 10px !important;
+    color: #2C3E50 !important;
+    text-decoration: none !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+    border-radius: 6px !important;
+    transition: all 0.2s ease !important;
+}
+
+.lang-option:hover {
+    background: #FFF5F2 !important;
+    color: #FF6B35 !important;
+}
+
+.lang-option.active {
+    background: #FFF5F2 !important;
+    color: #FF6B35 !important;
+}
+
+.lang-option.active::after {
+    content: '✓' !important;
+    margin-left: auto !important;
+    font-size: 11px !important;
+}
+
+.lang-flag {
+    font-size: 16px !important;
+    line-height: 1 !important;
+}
+
+/* Search box - Restore visibility */
+.search-box {
+    display: block !important;
+}
+
+/* Search button - compact (hidden) */
+.search-box .btn_search {
+    background: #F5F7FA !important;
+    border: 1px solid #E1E8ED !important;
+    border-radius: 20px !important;
+    padding: 6px 12px !important;
+    height: 36px !important;
+    display: flex !important;
+    align-items: center !important;
+    gap: 6px !important;
+    cursor: pointer !important;
+    transition: all 0.2s ease !important;
+    white-space: nowrap !important;
+}
+
+.search-box .btn_search svg {
+    fill: #5A6C7D !important;
+    width: 16px !important;
+    height: 16px !important;
+    flex-shrink: 0 !important;
+}
+
+.search-box .btn_search .search-text {
+    color: #5A6C7D !important;
+    font-size: 13px !important;
+    font-weight: 500 !important;
+}
+
+.search-box .btn_search:hover {
+    background: #FF6B35 !important;
+    border-color: #FF6B35 !important;
+}
+
+.search-box .btn_search:hover svg {
+    fill: #FFFFFF !important;
+}
+
+.search-box .btn_search:hover .search-text {
+    color: #FFFFFF !important;
+}
+
+/* ============================================
+   RESPONSIVE - Mobile adjustments
+   ============================================ */
+@media (max-width: 1024px) {
+    .list_links li a {
+        padding: 6px 8px !important;
+        font-size: 12px !important;
+    }
+    
+    .navbar .logo {
+        max-width: 140px !important;
+    }
+    
+    .navbar .logo img {
+        height: 32px !important;
+        max-width: 120px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .lang-switcher {
+        margin-right: 4px !important;
+    }
+    
+    .lang-btn span:not(.lang-flag) {
+        display: none !important;
+    }
+    
+    .lang-btn {
+        padding: 6px 10px !important;
+        height: 32px !important;
+    }
+    
+    .lang-dropdown {
+        right: -20px !important;
+    }
+    
+    .search-box .btn_search .search-text {
+        display: none !important;
+    }
+    
+    .search-box .btn_search {
+        padding: 6px 10px !important;
+        border-radius: 50% !important;
+        width: 36px !important;
+    }
+    
+    .navbar .logo {
+        max-width: 130px !important;
+    }
+    
+    .navbar .logo img {
+        height: 30px !important;
+        max-width: 110px !important;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar {
+        padding: 6px 0 !important;
+    }
+    
+    .navbar .logo {
+        max-width: 110px !important;
+    }
+    
+    .navbar .logo img {
+        height: 28px !important;
+        max-width: 100px !important;
+    }
+}

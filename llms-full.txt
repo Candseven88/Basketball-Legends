@@ -176,6 +176,8 @@ Basketball Legends 2020 is a popular browser-based basketball game where players
 - Sprunki - Music creation
 - Build Now GG - Building game
 - Dinosaur Game - Chrome dino runner
+- Slope Game - Ball rolling endless runner
+- Crazy Cattle 3D - 3D cattle battle game
 
 ## Frequently Asked Questions
 
