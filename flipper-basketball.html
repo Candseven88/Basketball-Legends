@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Flipper Basketball - Play Free Pinball Basketball Game Online</title>
     <meta name="description" content="Play Flipper Basketball unblocked! A unique game combining pinball mechanics with basketball. Use flippers to launch the ball into the hoop and score big!">
     <meta name="keywords" content="flipper basketball, pinball basketball game, basketball arcade game, free basketball game">
     <link rel="canonical" href="https://basketballlegends2020.online/flipper-basketball.html">
     <link rel="icon" type="image/svg+xml" href="/cache/data/image/options/basketball-legends-favicon.svg" />
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css">
+    <!-- Non-critical CSS - Deferred loading -->
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/style.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css"></noscript>
     <link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT2XM1TMPM"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DT2XM1TMPM');</script>
+    <!-- Google Analytics - Deferred loading for better performance -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-DT2XM1TMPM';
+        script.async = true;
+        document.head.appendChild(script);
+        script.onload = function() {
+          gtag('js', new Date());
+          gtag('config', 'G-DT2XM1TMPM');
+        };
+      });
+    </script>
 
 <style>
 /* ============================================
@@ -506,13 +526,25 @@ footer::before {
 
 </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE"></script>
+<!-- Google Analytics - Deferred loading for better performance -->
 <script>
+  // Defer Google Analytics loading until after page load
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-70KM5C3PQE');
+  
+  window.addEventListener('load', function() {
+    // Load gtag.js after page load
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    // Initialize GA after script loads
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'G-70KM5C3PQE');
+    };
+  });
 </script>
 </head>
 <body>
@@ -728,8 +760,8 @@ footer::before {
 </footer>
         </div>
     </div>
-    <script src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
-    <script src="/themes/slope-game/rs/js/lazyload.min.js"></script>
-    <script src="/themes/slope-game/rs/js/script.js"></script>
+    <script defer src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
+    <script defer src="/themes/slope-game/rs/js/lazyload.min.js"></script>
+    <script defer src="/themes/slope-game/rs/js/script.js"></script>
 </body>
 </html>

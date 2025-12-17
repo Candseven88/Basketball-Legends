@@ -6,6 +6,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect to external domains for faster resource loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://basketballlegends.pro" crossorigin>
+    <link rel="preconnect" href="https://html5.gamedistribution.com" crossorigin>
+    <!-- DNS prefetch as fallback for older browsers -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://basketballlegends.pro">
+    <link rel="dns-prefetch" href="https://html5.gamedistribution.com">
+    <!-- Preload LCP image for faster initial render -->
+    <link rel="preload" as="image" href="/cache/data/image/options/basketball-legends-logo.svg" type="image/svg+xml">
     <meta name="distribution" content="Global">
     <meta http-equiv="audience" content="General">
     <title>Basketball Legends 2020 - Play Free Unblocked Games Online</title>
@@ -46,11 +61,43 @@
 <meta name="apple-mobile-web-app-title" content="Basketball Legends 2020">
 <meta name="HandheldFriendly" content="true">
 <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css">
-
-        <link rel="preload" href="/themes/slope-game/rs/css/style.css" as="style">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css">
+    <!-- Critical CSS - Inlined for faster initial render -->
+    <style>
+    /* Critical CSS - Above-the-fold styles */
+    :root{--primary-orange:#FF6B35;--primary-orange-light:#FF8C61;--bg-primary:#F5F7FA;--bg-secondary:#FFFFFF;--text-primary:#2C3E50;--text-secondary:#5A6C7D;--border-color:#E1E8ED;--radius-md:12px;--shadow-sm:0 2px 8px rgba(0,0,0,0.05)}
+    *,*::before,*::after{box-sizing:border-box}html{line-height:1.15;-webkit-text-size-adjust:100%}body{margin:0;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto',sans-serif;background:var(--bg-primary);color:var(--text-primary)}img{border-style:none;max-width:100%;height:auto}a{background-color:transparent;text-decoration:none;color:inherit}button{font-family:inherit;cursor:pointer}
+    .page{display:flex;flex-direction:column;min-height:100%}.page__wrapper{flex-grow:1}.container{width:1000px;max-width:100%;margin:0 auto;padding:0 15px}
+    .nav-wrap{background:#FFFFFF;border-bottom:1px solid var(--border-color);box-shadow:var(--shadow-sm);position:sticky;top:0;z-index:1000}
+    .navbar{display:flex;align-items:center;justify-content:space-between;padding:8px 0;gap:12px}
+    .navbar .logo{flex-shrink:0;max-width:160px}.navbar .logo a{display:block}.navbar .logo img{height:56px;max-height:56px;width:auto}
+    .nav-links{flex:1;display:flex;justify-content:center}.list_links{display:flex;align-items:center;gap:4px;list-style:none;margin:0;padding:0}.list_links li a{display:block;padding:8px 16px;color:var(--text-primary);font-weight:600;font-size:14px;border-radius:6px;transition:color 0.2s ease}.list_links li a:hover{color:var(--primary-orange)}
+    .bx-menu{display:none;font-size:24px;cursor:pointer;padding:8px}
+    .lang-switcher{position:relative;flex-shrink:0}.lang-btn{display:flex;align-items:center;gap:6px;padding:8px 14px;background:var(--bg-primary);border:1px solid var(--border-color);border-radius:20px;color:var(--text-primary);font-size:13px;font-weight:600;height:36px}.lang-btn:hover{background:var(--primary-orange);border-color:var(--primary-orange);color:white}.lang-btn svg{width:16px;height:16px;stroke:currentColor}.lang-btn .arrow{display:none}.lang-dropdown{position:absolute;top:calc(100% + 6px);right:0;min-width:140px;background:#FFFFFF;border:1px solid var(--border-color);border-radius:8px;padding:6px;box-shadow:0 8px 24px rgba(0,0,0,0.12);opacity:0;visibility:hidden;transform:translateY(-8px);transition:all 0.2s ease;z-index:1001}.lang-switcher:hover .lang-dropdown{opacity:1;visibility:visible;transform:translateY(0)}.lang-option{display:flex;align-items:center;gap:8px;padding:8px 10px;color:var(--text-primary);font-size:13px;font-weight:500;border-radius:6px}.lang-option:hover,.lang-option.active{background:#FFF5F2;color:var(--primary-orange)}.lang-flag{font-size:16px;line-height:1}
+    .search-box .btn_search{background:var(--bg-primary);border:1px solid var(--border-color);border-radius:24px;padding:8px 16px;height:40px;display:flex;align-items:center;gap:8px}.search-box .btn_search svg{fill:var(--text-secondary);width:18px;height:18px}.search-box .btn_search:hover{background:var(--primary-orange);border-color:var(--primary-orange)}.search-box .btn_search:hover svg{fill:#FFFFFF}
+    .game-frame-box{background:#FFFFFF;border:1px solid var(--border-color);border-radius:var(--radius-md);box-shadow:var(--shadow-sm);margin:24px 0;overflow:hidden}
+    .iframe-default{border-radius:var(--radius-md) var(--radius-md) 0 0;width:100%;display:block;border:none}
+    .header-game{background:#FFFFFF;padding:12px 16px;border-top:1px solid var(--border-color)}.box-header{display:flex;justify-content:space-between;align-items:center;width:100%}.game-full-rate h1{font-size:18px;font-weight:600;color:var(--text-primary);margin:0}
+    .header-game-extend{display:flex;gap:8px;align-items:center}.header-game-extend button{width:40px;height:40px;padding:8px;background:var(--bg-primary);border:1px solid var(--border-color);border-radius:8px;display:flex;align-items:center;justify-content:center;transition:all 0.2s ease}.header-game-extend button:hover{background:var(--primary-orange);border-color:var(--primary-orange)}.header-game-extend button svg{width:20px;height:20px;fill:var(--text-secondary)}.header-game-extend button:hover svg{fill:#FFFFFF}
+    .wordle-text .info_text.title_block,.wordle-text h2{color:var(--text-primary);font-weight:700;font-size:26px;margin-bottom:16px}
+    .games{display:grid;grid-template-columns:repeat(auto-fill,minmax(160px,1fr));gap:24px;padding:24px 0}
+    .game-item{background:transparent;border:none;border-radius:var(--radius-md);overflow:visible;transition:transform 0.2s ease;display:block;cursor:pointer}.game-item:hover{transform:translateY(-4px)}
+    .game-item__img{position:relative;padding-top:67%;overflow:hidden;background:#FFFFFF;border-radius:var(--radius-md);border:1px solid var(--border-color);box-shadow:var(--shadow-sm)}.game-item__img img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}.game-item:hover .game-item__img img{transform:scale(1.05)}.game-item:hover .game-item__img{box-shadow:0 8px 24px rgba(0,0,0,0.15)}
+    .game-item__info{padding:8px 0 0 0;background:transparent}.game-item__title{font-size:14px;font-weight:600;color:var(--text-primary);margin:0;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center}.game-item__text,.game-item__bottom,.game-item__play{display:none}
+    .lazy{opacity:0;transition:opacity 0.3s}.lazy.loaded,.lazy[data-loaded="true"]{opacity:1}
+    @media(max-width:768px){.games{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px}.game-item__title{font-size:13px}.bx-menu{display:block}.nav-links{position:fixed;top:0;left:-100%;width:80%;height:100vh;background:#FFFFFF;flex-direction:column;padding:60px 20px 20px;z-index:999;transition:left 0.3s ease}.nav-links.show_mobile{left:0}.list_links{flex-direction:column;width:100%}.list_links li{width:100%}.list_links li a{padding:12px 16px}.navbar .logo img{height:40px}}
+    @media(max-width:480px){.games{grid-template-columns:repeat(2,1fr);gap:16px}.navbar .logo img{height:32px}}
+    </style>
+    
+    <!-- Non-critical CSS - Deferred loading -->
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css"></noscript>
+    
+    <link rel="preload" href="/themes/slope-game/rs/css/style.css" as="style">
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/style.css"></noscript>
+    
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css"></noscript>
 
     
     	
@@ -181,681 +228,33 @@
 
 
 
-<link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css">
-
-
-
-
-<style>
-/* ============================================
-   全新清爽设计 - Modern & Clean
-   ============================================ */
-
-/* 全局样式 - 浅色背景 */
-body {
-    background: #F5F7FA !important;
-    color: #2C3E50 !important;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', sans-serif !important;
-}
-
-/* 移除旧的深色背景 */
-body::before {
-    display: none !important;
-}
-
-/* 容器 */
-.container,
-.page {
-    background: transparent !important;
-}
-
-/* ============================================
-   导航栏 - 清爽白色
-   ============================================ */
-.nav-wrap {
-    background: #FFFFFF !important;
-    border-bottom: 1px solid #E1E8ED !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05) !important;
-    backdrop-filter: none !important;
-}
-
-.navbar .logo img {
-    filter: none !important;
-}
-
-.list_links li a {
-    color: #2C3E50 !important;
-    font-weight: 600 !important;
-}
-
-.list_links li a:hover {
-    color: #FF6B35 !important;
-    background: #FFF5F2 !important;
-}
-
-/* ============================================
-   游戏窗口 - 清爽设计
-   ============================================ */
-.game-frame-box {
-    background: #FFFFFF !important;
-    border: 1px solid #E1E8ED !important;
-    border-radius: 12px !important;
-    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.08) !important;
-    padding: 0 !important;
-    margin: 24px 0 !important;
-}
-
-.iframe-default {
-    border-radius: 12px 12px 0 0 !important;
-}
-
-.header-game {
-    background: #FFFFFF !important;
-    padding: 16px !important;
-    border-top: 1px solid #E1E8ED !important;
-}
-
-.header-game-extend button {
-    background: #F5F7FA !important;
-    border: 1px solid #E1E8ED !important;
-    color: #2C3E50 !important;
-}
-
-.header-game-extend button:hover {
-    background: #FF6B35 !important;
-    color: #FFFFFF !important;
-    border-color: #FF6B35 !important;
-}
-
-/* ============================================
-   游戏卡片 - 清爽简洁
-   ============================================ */
-
-/* 隐藏Play按钮 */
-.game-item__bottom,
-.game-item__play {
-    display: none !important;
-}
-
-/* 卡片容器 */
-.games {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
-    gap: 16px !important;
-    padding: 24px 0 !important;
-}
-
-/* 卡片样式 - 白色简洁 */
-.game-item {
-    background: #FFFFFF !important;
-    border: 1px solid #E1E8ED !important;
-    border-radius: 12px !important;
-    overflow: hidden !important;
-    transition: all 0.2s ease !important;
-    display: block !important;
-    text-decoration: none !important;
-    cursor: pointer !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
-}
-
-/* Hover效果 - 轻微上浮 */
-.game-item:hover {
-    transform: translateY(-4px) !important;
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12) !important;
-    border-color: #FF6B35 !important;
-}
-
-/* 移除顶部装饰条 */
-.game-item::before {
-    display: none !important;
-}
-
-/* 图片容器 - 简洁 */
-.game-item__img {
-    position: relative !important;
-    padding-top: 67% !important;
-    overflow: hidden !important;
-    background: #F5F7FA !important;
-}
-
-.game-item__img img {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: transform 0.3s ease !important;
-}
-
-.game-item:hover .game-item__img img {
-    transform: scale(1.05) !important;
-}
-
-/* 移除播放图标覆盖层 */
-.game-item__img::after {
-    display: none !important;
-}
-
-/* 信息区域 - 紧凑清爽 */
-.game-item__info {
-    padding: 12px !important;
-    background: #FFFFFF !important;
-}
-
-.game-item__title {
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    color: #2C3E50 !important;
-    margin: 0 !important;
-    line-height: 1.4 !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-}
-
-.game-item__text {
-    display: none !important;
-}
-
-/* ============================================
-   标题和文字 - 深色清晰
-   ============================================ */
-h1, h2, h3, h4, h5, h6 {
-    color: #2C3E50 !important;
-}
-
-.wordle-text .info_text.title_block,
-.wordle-text h2 {
-    color: #2C3E50 !important;
-    font-weight: 700 !important;
-}
-
-.wordle-text .info_text.title_block::after,
-.wordle-text h2::after {
-    background: #FF6B35 !important;
-}
-
-p, span, div, li {
-    color: #5A6C7D !important;
-}
-
-.wordle-text p,
-.wordle-text div {
-    color: #5A6C7D !important;
-    line-height: 1.8 !important;
-}
-
-/* 内容区域 */
-.wordle-text,
-.content-area {
-    background: #FFFFFF !important;
-    border: 1px solid #E1E8ED !important;
-    border-radius: 12px !important;
-    padding: 24px !important;
-    margin: 24px 0 !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04) !important;
-}
-
-/* ============================================
-   Footer - 清爽设计
-   ============================================ */
-footer {
-    background: #FFFFFF !important;
-    border-top: 1px solid #E1E8ED !important;
-    padding: 32px 0 24px !important;
-    margin-top: 48px !important;
-}
-
-footer::before {
-    display: none !important;
-}
-
-.footer__copir {
-    color: #5A6C7D !important;
-    font-size: 14px !important;
-}
-
-.footer__copir a {
-    color: #FF6B35 !important;
-    font-weight: 600 !important;
-}
-
-.infor .link {
-    color: #5A6C7D !important;
-    font-weight: 500 !important;
-}
-
-.infor .link:hover {
-    color: #FF6B35 !important;
-    background: #FFF5F2 !important;
-}
-
-.infor .link::after {
-    display: none !important;
-}
-
-/* ============================================
-   面包屑导航
-   ============================================ */
-.breadcrumbs {
-    background: transparent !important;
-    padding: 16px 0 !important;
-}
-
-.breadcrumbs__link {
-    color: #5A6C7D !important;
-    background: transparent !important;
-}
-
-.breadcrumbs__link:hover {
-    color: #FF6B35 !important;
-    background: #FFF5F2 !important;
-}
-
-/* ============================================
-   按钮和链接
-   ============================================ */
-.btn,
-button {
-    background: #FF6B35 !important;
-    color: #FFFFFF !important;
-    border: none !important;
-    border-radius: 8px !important;
-    padding: 10px 20px !important;
-    font-weight: 600 !important;
-    transition: all 0.2s ease !important;
-}
-
-.btn:hover,
-button:hover {
-    background: #E85A2A !important;
-    transform: translateY(-2px) !important;
-    box-shadow: 0 4px 12px rgba(255, 107, 53, 0.3) !important;
-}
-
-/* ============================================
-   响应式优化
-   ============================================ */
-@media (max-width: 768px) {
-    .games {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
-        gap: 12px !important;
-    }
-    
-    .game-item__title {
-        font-size: 13px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .games {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
-}
-</style>
-
-
-
-
-
-<style>
-/* ============================================
-   游戏卡片优化 - 减少空白，增加间距
-   ============================================ */
-
-/* 卡片容器 - 增加间距 */
-.games {
-    display: grid !important;
-    grid-template-columns: repeat(auto-fill, minmax(160px, 1fr)) !important;
-    gap: 24px !important;  /* 从16px增加到24px */
-    padding: 24px 0 !important;
-}
-
-/* 卡片样式 - 移除边框，只保留图片 */
-.game-item {
-    background: transparent !important;  /* 移除白色背景 */
-    border: none !important;  /* 移除边框 */
-    border-radius: 12px !important;
-    overflow: visible !important;  /* 允许内容溢出 */
-    transition: all 0.2s ease !important;
-    display: block !important;
-    text-decoration: none !important;
-    cursor: pointer !important;
-    box-shadow: none !important;  /* 移除阴影 */
-}
-
-/* Hover效果 - 只对图片 */
-.game-item:hover {
-    transform: translateY(-4px) !important;
-}
-
-.game-item:hover .game-item__img {
-    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15) !important;
-}
-
-/* 图片容器 - 添加边框和阴影 */
-.game-item__img {
-    position: relative !important;
-    padding-top: 67% !important;
-    overflow: hidden !important;
-    background: #FFFFFF !important;
-    border-radius: 12px !important;
-    border: 1px solid #E1E8ED !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06) !important;
-    transition: all 0.2s ease !important;
-}
-
-.game-item__img img {
-    position: absolute !important;
-    top: 0 !important;
-    left: 0 !important;
-    width: 100% !important;
-    height: 100% !important;
-    object-fit: cover !important;
-    transition: transform 0.3s ease !important;
-}
-
-.game-item:hover .game-item__img img {
-    transform: scale(1.05) !important;
-}
-
-/* 信息区域 - 减少padding，移除背景 */
-.game-item__info {
-    padding: 8px 0 0 0 !important;  /* 只保留顶部8px */
-    background: transparent !important;  /* 移除白色背景 */
-}
-
-.game-item__title {
-    font-size: 14px !important;
-    font-weight: 600 !important;
-    color: #2C3E50 !important;
-    margin: 0 !important;
-    line-height: 1.4 !important;
-    overflow: hidden !important;
-    text-overflow: ellipsis !important;
-    white-space: nowrap !important;
-    text-align: center !important;  /* 居中对齐 */
-}
-
-/* 响应式 */
-@media (max-width: 768px) {
-    .games {
-        grid-template-columns: repeat(auto-fill, minmax(140px, 1fr)) !important;
-        gap: 20px !important;
-    }
-    
-    .game-item__title {
-        font-size: 13px !important;
-    }
-}
-
-@media (max-width: 480px) {
-    .games {
-        grid-template-columns: repeat(2, 1fr) !important;
-        gap: 16px !important;
-    }
-}
-</style>
-
-
-
-
-
-<style>
-/* ============================================
-   导航栏和按钮修复
-   ============================================ */
-
-/* 导航栏链接 - 移除过宽的背景hover效果 */
-.list_links li a {
-    color: #2C3E50 !important;
-    font-weight: 600 !important;
-    padding: 8px 16px !important;
-    border-radius: 6px !important;
-    transition: color 0.2s ease !important;
-    background: transparent !important;
-    position: relative !important;
-}
-
-/* Hover效果 - 只改变颜色，添加下划线 */
-.list_links li a:hover {
-    color: #FF6B35 !important;
-    background: transparent !important;  /* 移除背景色 */
-}
-
-/* 添加下划线效果代替背景色 */
-.list_links li a::after {
-    content: '' !important;
-    position: absolute !important;
-    bottom: 4px !important;
-    left: 16px !important;
-    right: 16px !important;
-    height: 2px !important;
-    background: #FF6B35 !important;
-    transform: scaleX(0) !important;
-    transition: transform 0.2s ease !important;
-}
-
-.list_links li a:hover::after {
-    transform: scaleX(1) !important;
-}
-
-/* 移除旧的::before伪元素效果 */
-.list_links li a::before {
-    display: none !important;
-}
-
-/* 当前激活的tab */
-.list_links li a.active,
-.list_links li.active a {
-    color: #FF6B35 !important;
-}
-
-/* ============================================
-   游戏窗口按钮修复 - 让图标清晰可见
-   ============================================ */
-
-/* 按钮容器 */
-.header-game-extend {
-    display: flex !important;
-    gap: 8px !important;
-    align-items: center !important;
-}
-
-/* 按钮基础样式 */
-.header-game-extend button,
-.header-game-extend > button {
-    width: 40px !important;
-    height: 40px !important;
-    padding: 8px !important;
-    background: #F5F7FA !important;
-    border: 1px solid #E1E8ED !important;
-    border-radius: 8px !important;
-    cursor: pointer !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    transition: all 0.2s ease !important;
-}
-
-/* 按钮hover效果 */
-.header-game-extend button:hover,
-.header-game-extend > button:hover {
-    background: #FF6B35 !important;
-    border-color: #FF6B35 !important;
-}
-
-/* SVG图标样式 - 确保可见 */
-.header-game-extend button svg,
-.header-game-extend > button svg,
-.header-game-extend > button > svg {
-    width: 20px !important;
-    height: 20px !important;
-    fill: #5A6C7D !important;
-    stroke: #5A6C7D !important;
-    color: #5A6C7D !important;
-}
-
-/* Hover时图标变白 */
-.header-game-extend button:hover svg,
-.header-game-extend > button:hover svg,
-.header-game-extend > button:hover > svg {
-    fill: #FFFFFF !important;
-    stroke: #FFFFFF !important;
-    color: #FFFFFF !important;
-}
-
-/* 确保SVG path也有颜色 */
-.header-game-extend button svg path,
-.header-game-extend > button svg path {
-    fill: #5A6C7D !important;
-    stroke: #5A6C7D !important;
-}
-
-.header-game-extend button:hover svg path,
-.header-game-extend > button:hover svg path {
-    fill: #FFFFFF !important;
-    stroke: #FFFFFF !important;
-}
-
-/* 分享按钮 */
-.share-btn svg {
-    fill: #5A6C7D !important;
-}
-
-.share-btn:hover svg {
-    fill: #FFFFFF !important;
-}
-
-/* 评论按钮已移除 - 目标元素不存在 */
-
-/* 影院模式按钮 */
-.theatemode svg {
-    stroke: #5A6C7D !important;
-}
-
-.theatemode:hover svg {
-    stroke: #FFFFFF !important;
-}
-
-/* 全屏按钮 */
-.expand-btn svg {
-    fill: #5A6C7D !important;
-}
-
-.expand-btn:hover svg {
-    fill: #FFFFFF !important;
-}
-
-.expand-btn svg path {
-    stroke: #5A6C7D !important;
-    fill: #5A6C7D !important;
-}
-
-.expand-btn:hover svg path {
-    stroke: #FFFFFF !important;
-    fill: #FFFFFF !important;
-}
-
-/* 游戏标题区域 */
-.header-game {
-    background: #FFFFFF !important;
-    padding: 12px 16px !important;
-    border-top: 1px solid #E1E8ED !important;
-    display: flex !important;
-    align-items: center !important;
-}
-
-.box-header {
-    display: flex !important;
-    justify-content: space-between !important;
-    align-items: center !important;
-    width: 100% !important;
-}
-
-.game-full-rate h1 {
-    font-size: 18px !important;
-    font-weight: 600 !important;
-    color: #2C3E50 !important;
-    margin: 0 !important;
-}
-
-/* 下拉菜单样式 */
-.htmlCss-sub-menu,
-.sub-menu {
-    background: #FFFFFF !important;
-    border: 1px solid #E1E8ED !important;
-    border-radius: 8px !important;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1) !important;
-    padding: 8px 0 !important;
-}
-
-.sub-menu li a {
-    padding: 8px 16px !important;
-    color: #2C3E50 !important;
-}
-
-.sub-menu li a:hover {
-    background: #FFF5F2 !important;
-    color: #FF6B35 !important;
-}
-
-/* 搜索按钮 - 优化样式 */
-.search-box .btn_search {
-    background: #F5F7FA !important;
-    border: 1px solid #E1E8ED !important;
-    border-radius: 24px !important;
-    padding: 8px 16px !important;
-    width: auto !important;
-    height: 40px !important;
-    display: flex !important;
-    align-items: center !important;
-    justify-content: center !important;
-    gap: 8px !important;
-    cursor: pointer !important;
-    transition: all 0.2s ease !important;
-}
-
-.search-box .btn_search svg {
-    fill: #5A6C7D !important;
-    width: 18px !important;
-    height: 18px !important;
-}
-
-.search-box .btn_search .search-text {
-    color: #5A6C7D !important;
-    font-size: 14px !important;
-    font-weight: 500 !important;
-}
-
-.search-box .btn_search:hover {
-    background: #FF6B35 !important;
-    border-color: #FF6B35 !important;
-}
-
-.search-box .btn_search:hover svg {
-    fill: #FFFFFF !important;
-}
-
-.search-box .btn_search:hover .search-text {
-    color: #FFFFFF !important;
-}
-
-/* Logo 样式优化 */
-.navbar .logo img {
-    height: 56px !important;
-    max-height: 56px !important;
-}
-</style>
-
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE"></script>
+<!-- Non-critical CSS - Deferred loading -->
+<link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css"></noscript>
+
+<link rel="stylesheet" href="/themes/slope-game/rs/css/page-overrides.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/page-overrides.css"></noscript>
+
+<!-- Inline styles moved to /themes/slope-game/rs/css/page-overrides.css -->
+<!-- Google Analytics - Deferred loading for better performance -->
 <script>
+  // Defer Google Analytics loading until after page load
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-70KM5C3PQE');
+  
+  window.addEventListener('load', function() {
+    // Load gtag.js after page load
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    // Initialize GA after script loads
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'G-70KM5C3PQE');
+    };
+  });
 </script>
 </head>
 <body class=" ">
@@ -868,7 +267,7 @@ button:hover {
 						<div class='bx bx-menu'>☰</div>
 						<div class="logo">
 							<a href="/index.html" class="logo" title="Basketball Legends 2020">
-								<img itemprop="logo" class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/options/basketball-legends-logo.svg" width="100%" style="height: 56px;" title="Basketball Legends 2020" alt="Basketball Legends 2020" />
+								<img itemprop="logo" src="/cache/data/image/options/basketball-legends-logo.svg" width="224" height="56" title="Basketball Legends 2020" alt="Basketball Legends 2020" />
 							</a>
 						</div>
 						<div class="nav-links">
@@ -1010,227 +409,7 @@ button:hover {
 
 <span class="exit-fullscreen hidden" id="_exit_full_screen">✕</span>
 
-<script>
-    function scrollToDiv(element) {
-        if ($(element).length) {
-            $('html,body').animate({
-                scrollTop: $(element).offset().top - 100
-            }, 'slow');
-        }
-    }
-</script>
-
-<style>
-    .css-wl8sln {
-        position: fixed;
-        padding: 32px;
-        z-index: 1300;
-        inset: 0px;
-        display: flex;
-        -webkit-box-align: center;
-        align-items: center;
-        -webkit-box-pack: center;
-        justify-content: center;
-        font-size: 16px;
-    }
-
-    .css-l8b4om {
-        z-index: -1;
-        position: fixed;
-        inset: 0px;
-        background-color: rgba(0, 0, 0, 0.5);
-        transition: background-color 225ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
-        -webkit-tap-highlight-color: transparent;
-    }
-
-    .css-1rh4j88 {
-        position: relative;
-        padding: 8px;
-        max-height: calc(100% - 64px);
-        max-width: 100%;
-        display: flex;
-        flex-direction: column;
-        outline: none;
-    }
-
-    .css-osmupm {
-        scrollbar-width: thin;
-        overflow-y: auto;
-        background-color: #fff;
-        color: rgb(102, 106, 127);
-        border-radius: 20px;
-        max-width: 600px;
-        padding: 24px;
-    }
-
-    .css-d8hoyy {
-        position: absolute;
-        top: 16px;
-        right: 12px;
-        width: 44px;
-        height: 44px;
-        z-index: 1;
-    }
-
-    .btn-close-share {
-        border-radius: 30px;
-        border: none;
-        padding: 0px;
-        width: 44px;
-        min-width: 44px;
-        height: 44px;
-        cursor: pointer;
-        background-color: transparent;
-        color: rgb(102, 106, 127);
-        transition: all 250ms ease 0s;
-    }
-
-    .btn-close-share:hover {
-        color: #000;
-    }
-
-    .btn-close-share svg {
-        display: inline-block;
-        fill: currentcolor;
-        height: 24px;
-        width: 24px;
-    }
-
-    .title-share {
-        margin-bottom: 16px;
-        text-align: center;
-        color: #000;
-        font-weight: bold;
-        font-size: 24px;
-        line-height: 31px;
-        margin-block: 0;
-        margin-bottom: 16px;
-        text-transform: capitalize;
-    }
-
-    .btn-share {
-        margin: 4px;
-        transition: opacity 0.2s ease 0s;
-        opacity: 0.89;
-        background-color: transparent;
-        border: none;
-        padding: 0px;
-        font: inherit;
-        color: inherit;
-        cursor: pointer;
-    }
-
-    .btn-share:hover {
-        z-index: 2;
-        opacity: 1;
-    }
-
-    .btn-css {
-        width: 60px;
-        height: 60px;
-        border-radius: 50%;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        background: rgb(44, 100, 246);
-    }
-
-    .css-1wtz2hp {
-        background: black;
-    }
-
-    .css-1whad9x {
-        background: rgb(236, 101, 61);
-    }
-
-    .css-jbkb4 {
-        background: #cb2027;
-    }
-
-    .css-jbkb3 {
-        background: rgb(88, 190, 85);
-    }
-
-    .css-17l7bn3 {
-        background: #08c;
-    }
-
-    .svg-css {
-        display: inline-block;
-        fill: currentcolor;
-        color: white;
-        width: 30px;
-        height: 30px;
-    }
-
-    .css-3uwb56 {
-        display: inline-block;
-        fill: currentcolor;
-        color: white;
-        width: 28px;
-        height: 28px;
-    }
-
-    .css-chxnnc {
-        display: flex;
-        margin-bottom: 8px;
-        margin-top: 16px;
-        width: 100%;
-        position: relative;
-        -webkit-box-align: center;
-        align-items: center;
-    }
-
-    .btn-copy {
-        border-radius: 30px;
-        transition: all 250ms ease 0s;
-        border: none;
-        cursor: pointer;
-        display: flex;
-        -webkit-box-pack: center;
-        justify-content: center;
-        -webkit-box-align: center;
-        align-items: center;
-        font-family: Nunito;
-        font-weight: 800;
-        box-sizing: border-box;
-        padding: 8px 16px;
-        background: linear-gradient(45deg, #518ee7 0, #2c48a4 100%);
-        color: rgb(249, 250, 255);
-        height: 34px;
-        position: absolute;
-        right: 16px;
-    }
-
-    .btn-copy:hover {
-        background: rgb(44, 100, 246);
-    }
-
-    .css-1kgmm81 {
-        padding: 12px 96px 12px 14px;
-        border: 2px solid #ddd;
-        color: rgb(249, 250, 255);
-        border-radius: 8px;
-        width: 100%;
-    }
-
-    .css-1kgmm81 .MuiInput-input {
-        outline: 0px;
-        width: 100%;
-        font-weight: 700;
-        resize: none;
-        padding: 0px;
-        border: 0px;
-        background: none;
-        color: rgb(135, 138, 158);
-    }
-
-    .hide-share {
-        display: none;
-    }
-</style>
+<!-- Share modal styles moved to /themes/slope-game/rs/css/page-overrides.css -->
 					</div>
 	</div>
 </section>
@@ -1246,7 +425,7 @@ button:hover {
 				<!-- Basketball Stars -->
 				<a class="game-item" href="/basketball-stars.html" title="Basketball Stars">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-stars-2026.jpg" width="200px" height="134px" title="Basketball Stars" alt="Basketball Stars">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-stars-2026.jpg" width="200" height="134" loading="lazy" title="Basketball Stars" alt="Basketball Stars">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Stars</div>
@@ -1255,7 +434,7 @@ button:hover {
 				<!-- Head Basketball -->
 				<a class="game-item" href="/head-basketball.html" title="Head Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/head-basketball.jpg" width="200px" height="134px" title="Head Basketball" alt="Head Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/head-basketball.jpg" width="200" height="134" loading="lazy" title="Head Basketball" alt="Head Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Head Basketball</div>
@@ -1264,7 +443,7 @@ button:hover {
 				<!-- Basketball Kings 2024 -->
 				<a class="game-item" href="/basketball-kings-2024.html" title="Basketball Kings 2024">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-kings-2024.jpg" width="200px" height="134px" title="Basketball Kings 2024" alt="Basketball Kings 2024">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-kings-2024.jpg" width="200" height="134" loading="lazy" title="Basketball Kings 2024" alt="Basketball Kings 2024">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Kings 2024</div>
@@ -1273,7 +452,7 @@ button:hover {
 				<!-- Basket Sport Stars -->
 				<a class="game-item" href="/basket-sport-stars.html" title="Basket Sport Stars">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basket-sport-stars.jpg" width="200px" height="134px" title="Basket Sport Stars" alt="Basket Sport Stars">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basket-sport-stars.jpg" width="200" height="134" loading="lazy" title="Basket Sport Stars" alt="Basket Sport Stars">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basket Sport Stars</div>
@@ -1282,7 +461,7 @@ button:hover {
 				<!-- Flipper Basketball -->
 				<a class="game-item" href="/flipper-basketball.html" title="Flipper Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/flipper-basketball.jpg" width="200px" height="134px" title="Flipper Basketball" alt="Flipper Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/flipper-basketball.jpg" width="200" height="134" loading="lazy" title="Flipper Basketball" alt="Flipper Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Flipper Basketball</div>
@@ -1291,7 +470,7 @@ button:hover {
 				<!-- Basketball Rush -->
 				<a class="game-item" href="/basketball-rush.html" title="Basketball Rush">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-rush.jpg" width="200px" height="134px" title="Basketball Rush" alt="Basketball Rush">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-rush.jpg" width="200" height="134" loading="lazy" title="Basketball Rush" alt="Basketball Rush">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Rush</div>
@@ -1300,7 +479,7 @@ button:hover {
 				<!-- Crazy Dunk -->
 				<a class="game-item" href="/crazy-dunk.html" title="Crazy Dunk">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-dunk.jpg" width="200px" height="134px" title="Crazy Dunk" alt="Crazy Dunk">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-dunk.jpg" width="200" height="134" loading="lazy" title="Crazy Dunk" alt="Crazy Dunk">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Crazy Dunk</div>
@@ -1309,7 +488,7 @@ button:hover {
 				<!-- Dunk Challenge -->
 				<a class="game-item" href="/dunk-challenge.html" title="Dunk Challenge">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/dunk-challenge.jpg" width="200px" height="134px" title="Dunk Challenge" alt="Dunk Challenge">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/dunk-challenge.jpg" width="200" height="134" loading="lazy" title="Dunk Challenge" alt="Dunk Challenge">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Dunk Challenge</div>
@@ -1318,7 +497,7 @@ button:hover {
 				<!-- Pinball Basketball -->
 				<a class="game-item" href="/pinball-basketball.html" title="Pinball Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/pinball-basketball.jpg" width="200px" height="134px" title="Pinball Basketball" alt="Pinball Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/pinball-basketball.jpg" width="200" height="134" loading="lazy" title="Pinball Basketball" alt="Pinball Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Pinball Basketball</div>
@@ -1327,7 +506,7 @@ button:hover {
 				<!-- Basketball Fever 2 -->
 				<a class="game-item" href="/basketball-fever-2.html" title="Basketball Fever 2">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-fever-2.jpg" width="200px" height="134px" title="Basketball Fever 2" alt="Basketball Fever 2">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-fever-2.jpg" width="200" height="134" loading="lazy" title="Basketball Fever 2" alt="Basketball Fever 2">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Fever 2</div>
@@ -1336,7 +515,7 @@ button:hover {
 				<!-- Basketball Fever -->
 				<a class="game-item" href="/basketball-fever-1.html" title="Basketball Fever">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-fever-1.jpg" width="200px" height="134px" title="Basketball Fever" alt="Basketball Fever">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-fever-1.jpg" width="200" height="134" loading="lazy" title="Basketball Fever" alt="Basketball Fever">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Fever</div>
@@ -1345,7 +524,7 @@ button:hover {
 				<!-- Basketball Life 3D -->
 				<a class="game-item" href="/basketball-life-3d.html" title="Basketball Life 3D">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-life-3d.jpg" width="200px" height="134px" title="Basketball Life 3D" alt="Basketball Life 3D">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-life-3d.jpg" width="200" height="134" loading="lazy" title="Basketball Life 3D" alt="Basketball Life 3D">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Life 3D</div>
@@ -1354,7 +533,7 @@ button:hover {
 				<!-- Hoop World 3D -->
 				<a class="game-item" href="/hoop-world-3d.html" title="Hoop World 3D">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/hoop-world-3d.jpg" width="200px" height="134px" title="Hoop World 3D" alt="Hoop World 3D">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/hoop-world-3d.jpg" width="200" height="134" loading="lazy" title="Hoop World 3D" alt="Hoop World 3D">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Hoop World 3D</div>
@@ -1363,7 +542,7 @@ button:hover {
 				<!-- Basketball Challenge -->
 				<a class="game-item" href="/basketball-challenge.html" title="Basketball Challenge">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-challenge.jpg" width="200px" height="134px" title="Basketball Challenge" alt="Basketball Challenge">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-challenge.jpg" width="200" height="134" loading="lazy" title="Basketball Challenge" alt="Basketball Challenge">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Challenge</div>
@@ -1372,7 +551,7 @@ button:hover {
 				<!-- Flipper Dunk 3D -->
 				<a class="game-item" href="/flipper-dunk-3d.html" title="Flipper Dunk 3D">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/flipper-dunk-3d.jpg" width="200px" height="134px" title="Flipper Dunk 3D" alt="Flipper Dunk 3D">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/flipper-dunk-3d.jpg" width="200" height="134" loading="lazy" title="Flipper Dunk 3D" alt="Flipper Dunk 3D">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Flipper Dunk 3D</div>
@@ -1381,7 +560,7 @@ button:hover {
 				<!-- Super Snappy Hoops -->
 				<a class="game-item" href="/super-snappy-hoops.html" title="Super Snappy Hoops">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/super-snappy-hoops.jpg" width="200px" height="134px" title="Super Snappy Hoops" alt="Super Snappy Hoops">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/super-snappy-hoops.jpg" width="200" height="134" loading="lazy" title="Super Snappy Hoops" alt="Super Snappy Hoops">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Super Snappy Hoops</div>
@@ -1390,7 +569,7 @@ button:hover {
 				<!-- Bounce Dunk Basketball -->
 				<a class="game-item" href="/bounce-dunk-basketball.html" title="Bounce Dunk Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/bounce-dunk-basketball.jpg" width="200px" height="134px" title="Bounce Dunk Basketball" alt="Bounce Dunk Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/bounce-dunk-basketball.jpg" width="200" height="134" loading="lazy" title="Bounce Dunk Basketball" alt="Bounce Dunk Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Bounce Dunk Basketball</div>
@@ -1399,7 +578,7 @@ button:hover {
 				<!-- Ragdoll Mega Dunk -->
 				<a class="game-item" href="/ragdoll-mega-dunk.html" title="Ragdoll Mega Dunk">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/ragdoll-mega-dunk.jpg" width="200px" height="134px" title="Ragdoll Mega Dunk" alt="Ragdoll Mega Dunk">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/ragdoll-mega-dunk.jpg" width="200" height="134" loading="lazy" title="Ragdoll Mega Dunk" alt="Ragdoll Mega Dunk">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Ragdoll Mega Dunk</div>
@@ -1408,7 +587,7 @@ button:hover {
 				<!-- Animal Basketball -->
 				<a class="game-item" href="/animal-basketball.html" title="Animal Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/animal-basketball.jpg" width="200px" height="134px" title="Animal Basketball" alt="Animal Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/animal-basketball.jpg" width="200" height="134" loading="lazy" title="Animal Basketball" alt="Animal Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Animal Basketball</div>
@@ -1417,7 +596,7 @@ button:hover {
 				<!-- On Fire Basketball Shots -->
 				<a class="game-item" href="/on-fire-basketball-shots.html" title="On Fire Basketball Shots">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/on-fire-basketball-shots.jpg" width="200px" height="134px" title="On Fire Basketball Shots" alt="On Fire Basketball Shots">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/on-fire-basketball-shots.jpg" width="200" height="134" loading="lazy" title="On Fire Basketball Shots" alt="On Fire Basketball Shots">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">On Fire Basketball Shots</div>
@@ -1426,7 +605,7 @@ button:hover {
 				<!-- Boolu Bask -->
 				<a class="game-item" href="/boolu-bask.html" title="Boolu Bask">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/boolu-bask.jpg" width="200px" height="134px" title="Boolu Bask" alt="Boolu Bask">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/boolu-bask.jpg" width="200" height="134" loading="lazy" title="Boolu Bask" alt="Boolu Bask">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Boolu Bask</div>
@@ -1435,7 +614,7 @@ button:hover {
 				<!-- Basket Shot -->
 				<a class="game-item" href="/basket-shot.html" title="Basket Shot">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basket-shot.jpg" width="200px" height="134px" title="Basket Shot" alt="Basket Shot">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basket-shot.jpg" width="200" height="134" loading="lazy" title="Basket Shot" alt="Basket Shot">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basket Shot</div>
@@ -1444,7 +623,7 @@ button:hover {
 				<!-- Ball Dunk Fall -->
 				<a class="game-item" href="/ball-dunk-fall.html" title="Ball Dunk Fall">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/ball-dunk-fall.jpg" width="200px" height="134px" title="Ball Dunk Fall" alt="Ball Dunk Fall">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/ball-dunk-fall.jpg" width="200" height="134" loading="lazy" title="Ball Dunk Fall" alt="Ball Dunk Fall">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Ball Dunk Fall</div>
@@ -1453,7 +632,7 @@ button:hover {
 				<!-- Jump Up 3D Basketball -->
 				<a class="game-item" href="/jump-up-3d-basketball.html" title="Jump Up 3D Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/jump-up-3d-basketball.jpg" width="200px" height="134px" title="Jump Up 3D Basketball" alt="Jump Up 3D Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/jump-up-3d-basketball.jpg" width="200" height="134" loading="lazy" title="Jump Up 3D Basketball" alt="Jump Up 3D Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Jump Up 3D Basketball</div>
@@ -1462,7 +641,7 @@ button:hover {
 				<!-- Basketball IO -->
 				<a class="game-item" href="/basketball-io.html" title="Basketball IO">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-io.jpg" width="200px" height="134px" title="Basketball IO" alt="Basketball IO">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-io.jpg" width="200" height="134" loading="lazy" title="Basketball IO" alt="Basketball IO">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball IO</div>
@@ -1471,7 +650,7 @@ button:hover {
 				<!-- Basketball Damage -->
 				<a class="game-item" href="/basketball-damage.html" title="Basketball Damage">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-damage.jpg" width="200px" height="134px" title="Basketball Damage" alt="Basketball Damage">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-damage.jpg" width="200" height="134" loading="lazy" title="Basketball Damage" alt="Basketball Damage">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball Damage</div>
@@ -1480,7 +659,7 @@ button:hover {
 				<!-- Basketball 3D -->
 				<a class="game-item" href="/basketball-3d.html" title="Basketball 3D">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-3d.jpg" width="200px" height="134px" title="Basketball 3D" alt="Basketball 3D">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/basketball-3d.jpg" width="200" height="134" loading="lazy" title="Basketball 3D" alt="Basketball 3D">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Basketball 3D</div>
@@ -1489,7 +668,7 @@ button:hover {
 				<!-- Skibidi Toilet Basketball -->
 				<a class="game-item" href="/skibidi-toilet-basketball.html" title="Skibidi Toilet Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/skibidi-toilet-basketball.jpg" width="200px" height="134px" title="Skibidi Toilet Basketball" alt="Skibidi Toilet Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/skibidi-toilet-basketball.jpg" width="200" height="134" loading="lazy" title="Skibidi Toilet Basketball" alt="Skibidi Toilet Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Skibidi Toilet Basketball</div>
@@ -1498,7 +677,7 @@ button:hover {
 				<!-- Tallman Dunk Rush -->
 				<a class="game-item" href="/tallman-dunk-rush.html" title="Tallman Dunk Rush">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/tallman-dunk-rush.jpg" width="200px" height="134px" title="Tallman Dunk Rush" alt="Tallman Dunk Rush">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/tallman-dunk-rush.jpg" width="200" height="134" loading="lazy" title="Tallman Dunk Rush" alt="Tallman Dunk Rush">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Tallman Dunk Rush</div>
@@ -1507,7 +686,7 @@ button:hover {
 				<!-- Super Hoops Basketball -->
 				<a class="game-item" href="/super-hoops-basketball.html" title="Super Hoops Basketball">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/super-hoops-basketball.jpg" width="200px" height="134px" title="Super Hoops Basketball" alt="Super Hoops Basketball">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/super-hoops-basketball.jpg" width="200" height="134" loading="lazy" title="Super Hoops Basketball" alt="Super Hoops Basketball">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Super Hoops Basketball</div>
@@ -1516,7 +695,7 @@ button:hover {
 				<!-- Crazy Dunk 2 -->
 				<a class="game-item" href="/crazy-dunk-2.html" title="Crazy Dunk 2">
 					<div class="game-item__img">
-						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-dunk-2.jpg" width="200px" height="134px" title="Crazy Dunk 2" alt="Crazy Dunk 2">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-dunk-2.jpg" width="200" height="134" loading="lazy" title="Crazy Dunk 2" alt="Crazy Dunk 2">
 					</div>
 					<div class="game-item__info">
 						<div class="game-item__title">Crazy Dunk 2</div>
@@ -1536,7 +715,7 @@ button:hover {
     
         <a class="game-item" href="/geometry-dash.html" title="Geometry Dash">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/geometry-dash-m200x134.jpg" width="200px" height="134px" title="Geometry Dash" alt="Geometry Dash img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/geometry-dash-m200x134.jpg" width="200" height="134" loading="lazy" title="Geometry Dash" alt="Geometry Dash img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Geometry Dash</div>
@@ -1549,7 +728,7 @@ button:hover {
     
         <a class="game-item" href="/space-waves.html" title="Space Waves">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/space-waves-m200x134.jpg" width="200px" height="134px" title="Space Waves" alt="Space Waves img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/space-waves-m200x134.jpg" width="200" height="134" loading="lazy" title="Space Waves" alt="Space Waves img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Space Waves</div>
@@ -1562,7 +741,7 @@ button:hover {
     
         <a class="game-item" href="/subway-surfers.html" title="Subway Surfers">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/subway-surfers-m200x134.jpg" width="200px" height="134px" title="Subway Surfers" alt="Subway Surfers img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/subway-surfers-m200x134.jpg" width="200" height="134" loading="lazy" title="Subway Surfers" alt="Subway Surfers img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Subway Surfers</div>
@@ -1575,7 +754,7 @@ button:hover {
     
         <a class="game-item" href="/speed-stars.html" title="Speed Stars">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/speed-stars-m200x134.jpg" width="200px" height="134px" title="Speed Stars" alt="Speed Stars img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/speed-stars-m200x134.jpg" width="200" height="134" loading="lazy" title="Speed Stars" alt="Speed Stars img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Speed Stars</div>
@@ -1588,7 +767,7 @@ button:hover {
     
         <a class="game-item" href="/sprunki.html" title="Sprunki">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/sprunki-m200x134.jpg" width="200px" height="134px" title="Sprunki" alt="Sprunki img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/sprunki-m200x134.jpg" width="200" height="134" loading="lazy" title="Sprunki" alt="Sprunki img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Sprunki</div>
@@ -1601,7 +780,7 @@ button:hover {
     
         <a class="game-item" href="/monkey-mart.html" title="Monkey Mart">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/monkey-mart-m200x134.jpg" width="200px" height="134px" title="Monkey Mart" alt="Monkey Mart img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/monkey-mart-m200x134.jpg" width="200" height="134" loading="lazy" title="Monkey Mart" alt="Monkey Mart img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Monkey Mart</div>
@@ -1614,7 +793,7 @@ button:hover {
     
         <a class="game-item" href="/dinosaur-game.html" title="Dinosaur Game">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/dinosaur-game-m200x134.jpg" width="200px" height="134px" title="Dinosaur Game" alt="Dinosaur Game img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/dinosaur-game-m200x134.jpg" width="200" height="134" loading="lazy" title="Dinosaur Game" alt="Dinosaur Game img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Dinosaur Game</div>
@@ -1627,7 +806,7 @@ button:hover {
     
         <a class="game-item" href="/block-blast.html" title="Block Blast">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/block-blast-m200x134.jpg" width="200px" height="134px" title="Block Blast" alt="Block Blast img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/block-blast-m200x134.jpg" width="200" height="134" loading="lazy" title="Block Blast" alt="Block Blast img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Block Blast</div>
@@ -1640,7 +819,7 @@ button:hover {
     
         <a class="game-item" href="/drift-boss.html" title="Drift Boss">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/drift-boss-m200x134.jpg" width="200px" height="134px" title="Drift Boss" alt="Drift Boss img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/drift-boss-m200x134.jpg" width="200" height="134" loading="lazy" title="Drift Boss" alt="Drift Boss img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Drift Boss</div>
@@ -1653,7 +832,7 @@ button:hover {
     
         <a class="game-item" href="/build-now-gg.html" title="Build Now GG">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/build-now-gg-m200x134.jpg" width="200px" height="134px" title="Build Now GG" alt="Build Now GG img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/build-now-gg-m200x134.jpg" width="200" height="134" loading="lazy" title="Build Now GG" alt="Build Now GG img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Build Now GG</div>
@@ -1666,7 +845,7 @@ button:hover {
     
         <a class="game-item" href="/retro-bowl.html" title="Retro Bowl">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/retro-bowl-m200x134.jpg" width="200px" height="134px" title="Retro Bowl" alt="Retro Bowl img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/retro-bowl-m200x134.jpg" width="200" height="134" loading="lazy" title="Retro Bowl" alt="Retro Bowl img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Retro Bowl</div>
@@ -1679,7 +858,7 @@ button:hover {
     
         <a class="game-item" href="/crazy-cattle-3d.html" title="Crazy Cattle 3D">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-cattle-3d-m200x134.jpg" width="200px" height="134px" title="Crazy Cattle 3D" alt="Crazy Cattle 3D img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-cattle-3d-m200x134.jpg" width="200" height="134" loading="lazy" title="Crazy Cattle 3D" alt="Crazy Cattle 3D img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Crazy Cattle 3D</div>
@@ -1712,7 +891,7 @@ button:hover {
 		<div class="wordle-text">
 							<h2 dir="auto" style="text-align: justify;">Welcome to Basketball Legends 2020 - Your Ultimate Gaming Destination!</h2>
 <p dir="auto" style="text-align: justify;">Welcome to <strong><a title="Basketball Legends 2020" href="/" target="_blank">Basketball Legends 2020</a></strong>&nbsp;at <em>basketballlegends2020.online</em>! We offer a fantastic collection of free unblocked games including the exciting <strong>Basketball Legends 2020</strong> and many other thrilling titles. Enjoy non-stop fun whether you're at school, work, or home. <strong>Basketball Legends 2020</strong> is your go-to destination for adrenaline-pumping challenges and addictive gameplay.</p>
-<p dir="auto" style="text-align: justify;"><a title="Click to play Basketball Legends 2020 now" href="#iframehtml5"><img style="max-width: 100%;" src="/data/image/options/basketball-legends-banner.svg" alt="basketball-legends-2020-gaming" /></a></p>
+<p dir="auto" style="text-align: justify;"><a title="Click to play Basketball Legends 2020 now" href="#iframehtml5"><img src="/data/image/options/basketball-legends-banner.svg" width="1200" height="630" style="max-width: 100%; height: auto;" alt="basketball-legends-2020-gaming" loading="lazy" /></a></p>
 <h3 dir="auto" style="text-align: justify;">What is Basketball Legends 2020?</h3>
 <p dir="auto" style="text-align: justify;"><strong><a title="Basketball Legends 2020" href="/" target="_blank">Basketball Legends 2020</a></strong>&nbsp;is your premier destination for free unblocked games. We feature an exciting collection of games including basketball action, racing challenges, puzzle games, and much more. With sleek graphics and fast-paced action across all our titles, <strong>Basketball Legends 2020</strong> is easy to access and perfect for gamers of all levels.</p>
 <h3 dir="auto" style="text-align: justify;">Why Play at Basketball Legends 2020?</h3>
@@ -1778,7 +957,7 @@ button:hover {
     
         <a class="game-item" href="/dinosaur-game.html" title="Dinosaur Game">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/dinosaur-game-m200x134.jpg" width="200px" height="134px" title="Dinosaur Game" alt="Dinosaur Game img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/dinosaur-game-m200x134.jpg" width="200" height="134" loading="lazy" title="Dinosaur Game" alt="Dinosaur Game img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Dinosaur Game</div>
@@ -1791,7 +970,7 @@ button:hover {
     
         <a class="game-item" href="/build-now-gg.html" title="Build Now GG">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/build-now-gg-m200x134.jpg" width="200px" height="134px" title="Build Now GG" alt="Build Now GG img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/build-now-gg-m200x134.jpg" width="200" height="134" loading="lazy" title="Build Now GG" alt="Build Now GG img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Build Now GG</div>
@@ -1804,7 +983,7 @@ button:hover {
     
         <a class="game-item" href="/sprunki.html" title="Sprunki">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/sprunki-m200x134.jpg" width="200px" height="134px" title="Sprunki" alt="Sprunki img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/sprunki-m200x134.jpg" width="200" height="134" loading="lazy" title="Sprunki" alt="Sprunki img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Sprunki</div>
@@ -1817,7 +996,7 @@ button:hover {
     
         <a class="game-item" href="/speed-stars.html" title="Speed Stars">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/speed-stars-m200x134.jpg" width="200px" height="134px" title="Speed Stars" alt="Speed Stars img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/speed-stars-m200x134.jpg" width="200" height="134" loading="lazy" title="Speed Stars" alt="Speed Stars img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Speed Stars</div>
@@ -1830,7 +1009,7 @@ button:hover {
     
         <a class="game-item" href="/crazy-cattle-3d.html" title="Crazy Cattle 3D">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-cattle-3d-m200x134.jpg" width="200px" height="134px" title="Crazy Cattle 3D" alt="Crazy Cattle 3D img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/crazy-cattle-3d-m200x134.jpg" width="200" height="134" loading="lazy" title="Crazy Cattle 3D" alt="Crazy Cattle 3D img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Crazy Cattle 3D</div>
@@ -1843,7 +1022,7 @@ button:hover {
     
         <a class="game-item" href="/retro-bowl.html" title="Retro Bowl">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/retro-bowl-m200x134.jpg" width="200px" height="134px" title="Retro Bowl" alt="Retro Bowl img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/retro-bowl-m200x134.jpg" width="200" height="134" loading="lazy" title="Retro Bowl" alt="Retro Bowl img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Retro Bowl</div>
@@ -1856,7 +1035,7 @@ button:hover {
     
         <a class="game-item" href="/block-blast.html" title="Block Blast">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/block-blast-m200x134.jpg" width="200px" height="134px" title="Block Blast" alt="Block Blast img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/block-blast-m200x134.jpg" width="200" height="134" loading="lazy" title="Block Blast" alt="Block Blast img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Block Blast</div>
@@ -1869,7 +1048,7 @@ button:hover {
     
         <a class="game-item" href="/drift-boss.html" title="Drift Boss">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/drift-boss-m200x134.jpg" width="200px" height="134px" title="Drift Boss" alt="Drift Boss img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/drift-boss-m200x134.jpg" width="200" height="134" loading="lazy" title="Drift Boss" alt="Drift Boss img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Drift Boss</div>
@@ -1882,7 +1061,7 @@ button:hover {
     
         <a class="game-item" href="/monkey-mart.html" title="Monkey Mart">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/monkey-mart-m200x134.jpg" width="200px" height="134px" title="Monkey Mart" alt="Monkey Mart img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/monkey-mart-m200x134.jpg" width="200" height="134" loading="lazy" title="Monkey Mart" alt="Monkey Mart img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Monkey Mart</div>
@@ -1895,7 +1074,7 @@ button:hover {
     
         <a class="game-item" href="/subway-surfers.html" title="Subway Surfers">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/subway-surfers-m200x134.jpg" width="200px" height="134px" title="Subway Surfers" alt="Subway Surfers img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/subway-surfers-m200x134.jpg" width="200" height="134" loading="lazy" title="Subway Surfers" alt="Subway Surfers img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Subway Surfers</div>
@@ -1908,7 +1087,7 @@ button:hover {
     
         <a class="game-item" href="/space-waves.html" title="Space Waves">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/space-waves-m200x134.jpg" width="200px" height="134px" title="Space Waves" alt="Space Waves img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/space-waves-m200x134.jpg" width="200" height="134" loading="lazy" title="Space Waves" alt="Space Waves img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Space Waves</div>
@@ -1921,7 +1100,7 @@ button:hover {
     
         <a class="game-item" href="/geometry-dash.html" title="Geometry Dash">
             <div class="game-item__img">
-                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/geometry-dash-m200x134.jpg" width="200px" height="134px" title="Geometry Dash" alt="Geometry Dash img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/geometry-dash-m200x134.jpg" width="200" height="134" loading="lazy" title="Geometry Dash" alt="Geometry Dash img">
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Geometry Dash</div>
@@ -2056,22 +1235,35 @@ button:hover {
     </svg>
 </div>
 
-<script>let ads_cached_html = 0</script><script src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script><script defer src="/themes/slope-game/rs/js/jquery.validate.min.js"></script><script defer src="/themes/slope-game/rs/plugins/raty/jquery.raty.js"></script>
-<script src="/themes/slope-game/rs/js/lazyload.min.js"></script>
-<script src="/themes/slope-game/rs/js/script.js"></script>
+<script>let ads_cached_html = 0</script>
+<script defer src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
+<script defer src="/themes/slope-game/rs/js/jquery.validate.min.js"></script>
+<script defer src="/themes/slope-game/rs/plugins/raty/jquery.raty.js"></script>
+<script defer src="/themes/slope-game/rs/js/lazyload.min.js"></script>
+<script defer src="/themes/slope-game/rs/js/script.js"></script>
 
 
 
+<!-- Inline JavaScript moved to end of body for better performance -->
 <script>
-// 确保懒加载和全屏功能正常工作
+// Scroll to element function (used by share button)
+function scrollToDiv(element) {
+    if (typeof $ !== 'undefined' && $(element).length) {
+        $('html,body').animate({
+            scrollTop: $(element).offset().top - 100
+        }, 'slow');
+    }
+}
+
+// Initialize lazy loading and fullscreen functionality after DOM is ready
 document.addEventListener('DOMContentLoaded', function() {
-    // 初始化懒加载
+    // Initialize lazy loading
     var lazyImages = document.querySelectorAll('.lazy');
     if (lazyImages.length && typeof lazyload === 'function') {
         lazyload(lazyImages);
     }
     
-    // 全屏功能
+    // Fullscreen functionality
     var expandBtn = document.getElementById('expand');
     if (expandBtn) {
         expandBtn.addEventListener('click', function() {

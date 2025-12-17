@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Animal Basketball - Play Free Online Basketball Game Unblocked</title>
     <meta name="description" content="Play Animal Basketball unblocked online! Team up with adorable animals, unlock magical balls, and enjoy physics-powered hoop action in arcade, championship, and mission modes.">
     <meta name="keywords" content="animal basketball, animal basketball game, cute basketball game, free basketball game online">
@@ -15,9 +18,13 @@
     <meta property="og:image" content="https://basketballlegends2020.online/cache/data/image/game/animal-basketball.jpg" />
     <meta property="og:description" content="Play Animal Basketball unblocked! Team up with cute animals for physics-powered basketball fun." />
     <meta property="og:site_name" content="Basketball Legends 2020" />
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css">
+    <!-- Non-critical CSS - Deferred loading -->
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/style.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css"></noscript>
     <link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css">
     
     <script type="application/ld+json">
@@ -112,13 +119,25 @@ footer::before { display: none !important; }
 }
 
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE"></script>
+<!-- Google Analytics - Deferred loading for better performance -->
 <script>
+  // Defer Google Analytics loading until after page load
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-70KM5C3PQE');
+  
+  window.addEventListener('load', function() {
+    // Load gtag.js after page load
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    // Initialize GA after script loads
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'G-70KM5C3PQE');
+    };
+  });
 </script>
 </head>
 <body>
@@ -355,8 +374,8 @@ footer::before { display: none !important; }
 </footer>
         </div>
     </div>
-    <script src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
-    <script src="/themes/slope-game/rs/js/lazyload.min.js"></script>
-    <script src="/themes/slope-game/rs/js/script.js"></script>
+    <script defer src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
+    <script defer src="/themes/slope-game/rs/js/lazyload.min.js"></script>
+    <script defer src="/themes/slope-game/rs/js/script.js"></script>
 </body>
 </html>

@@ -6,6 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <meta name="distribution" content="Global">
     <meta http-equiv="audience" content="General">
     <title>Sprunki - Play Online</title>
@@ -37,11 +40,15 @@
 <meta name="apple-mobile-web-app-title" content="Sprunki - Play Online">
 <meta name="HandheldFriendly" content="true">
 <meta name="mobile-web-app-capable" content="yes">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css">
+    <!-- Non-critical CSS - Deferred loading -->
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css"></noscript>
 
         <link rel="preload" href="/themes/slope-game/rs/css/style.css" as="style">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css">
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/style.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css"></noscript>
 
     
     	
@@ -127,7 +134,11 @@
         let limit = '';
         let oldValue = 'listhtml';
     </script>
-<link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css">
+<link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css"></noscript>
+
+<link rel="stylesheet" href="/themes/slope-game/rs/css/page-overrides.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/page-overrides.css"></noscript>
 
 
 
@@ -768,13 +779,25 @@ button:hover {
 }
 </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE"></script>
+<!-- Google Analytics - Deferred loading for better performance -->
 <script>
+  // Defer Google Analytics loading until after page load
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-70KM5C3PQE');
+  
+  window.addEventListener('load', function() {
+    // Load gtag.js after page load
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    // Initialize GA after script loads
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'G-70KM5C3PQE');
+    };
+  });
 </script>
 </head>
 <body class=" ">
@@ -926,15 +949,7 @@ button:hover {
 
 <span class="exit-fullscreen hidden" id="_exit_full_screen">✕</span>
 
-<script>
-    function scrollToDiv(element) {
-        if ($(element).length) {
-            $('html,body').animate({
-                scrollTop: $(element).offset().top - 100
-            }, 'slow');
-        }
-    }
-</script>
+
 
 <style>
     .css-wl8sln {
@@ -1521,9 +1536,9 @@ button:hover {
     </svg>
 </div>
 
-<script>let ads_cached_html = 0</script><script src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
-<script src="/themes/slope-game/rs/js/lazyload.min.js"></script>
-<script src="/themes/slope-game/rs/js/script.js"></script>
+<script>let ads_cached_html = 0</script><script defer src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
+<script defer src="/themes/slope-game/rs/js/lazyload.min.js"></script>
+<script defer src="/themes/slope-game/rs/js/script.js"></script>
 
 
 
@@ -1555,6 +1570,17 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 });
+</script>
+<!-- Inline JavaScript moved to end of body for better performance -->
+<script>
+// Scroll to element function (used by share button)
+function scrollToDiv(element) {
+    if (typeof $ !== 'undefined' && $(element).length) {
+        $('html,body').animate({
+            scrollTop: $(element).offset().top - 100
+        }, 'slow');
+    }
+}
 </script>
 </body>
 

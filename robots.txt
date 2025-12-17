@@ -1,6 +1,7 @@
 # Basketball Legends 2020 - Robots.txt
 # https://basketballlegends2020.online
 
+# Default rules for all crawlers
 User-agent: *
 Allow: /
 Disallow: /config/
@@ -8,17 +9,12 @@ Disallow: /themes/
 Disallow: /logs/
 Disallow: /.kiro/
 Disallow: /.vscode/
-
-# Sitemap location
-Sitemap: https://basketballlegends2020.online/sitemap.xml
-
-# Crawl-delay for polite crawling
+Disallow: /cache/
 Crawl-delay: 1
 
-# Google specific
+# Google specific - no crawl delay (Google ignores it anyway)
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
 
 # Bing specific
 User-agent: Bingbot
@@ -43,3 +39,6 @@ Allow: /
 
 User-agent: Google-Extended
 Allow: /
+
+# Sitemap location (must be absolute URL)
+Sitemap: https://basketballlegends2020.online/sitemap.xml

@@ -5,16 +5,31 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Preconnect to external domains for faster resource loading -->
+    <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin>
+    <link rel="preconnect" href="https://basketballlegends.pro" crossorigin>
+    <link rel="preconnect" href="https://html5.gamedistribution.com" crossorigin>
+    <!-- DNS prefetch as fallback for older browsers -->
+    <link rel="dns-prefetch" href="https://fonts.googleapis.com">
+    <link rel="dns-prefetch" href="https://fonts.gstatic.com">
+    <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+    <link rel="dns-prefetch" href="https://basketballlegends.pro">
+    <link rel="dns-prefetch" href="https://html5.gamedistribution.com">
+    <!-- Preload LCP image for faster initial render -->
+    <link rel="preload" as="image" href="/cache/data/image/options/basketball-legends-logo.svg" type="image/svg+xml">
     <meta name="distribution" content="Global">
     <meta http-equiv="audience" content="General">
     
     <!-- SEO Optimized Title - Primary Keyword: basketball legends 2020 -->
-    <title>Basketball Legends 2020 - Jouer Gratuitement en Ligne</title>
-    <meta name="title" content="Basketball Legends 2020 - Jouer Gratuitement en Ligne">
-    <meta name="description" content="Jouez à Basketball Legends 2020 débloqué gratuitement! Apprenez à dunker, tirer et maîtriser les contrôles. Fonctionne sur unblocked 76 et 66. Sans téléchargement - jouez à l'école ou au travail avec des joueurs légendaires en matchs 1v1 et 2v2!">
+    <title>Basketball Legends 2020 - Gioca Gratis Online</title>
+    <meta name="title" content="Basketball Legends 2020 - Gioca Gratis Online">
+    <meta name="description" content="Gioca a Basketball Legends 2020 sbloccato gratis! Impara a schiacciare, tirare e padroneggiare i controlli. Funziona su unblocked 76 e 66. Nessun download - gioca a scuola o al lavoro con giocatori leggendari in partite 1v1 e 2v2!">
     
     <!-- Keywords optimized for basketball legends 2020 - including long-tail keywords -->
-    <meta name="keywords" content="basketball legends 2020, basketball legends 2020 débloqué, basketball legends 2020 unblocked 76, basketball legends 2020 unblocked 66, basketball legends 2020 gratuit, comment dunker basketball legends 2020, basketball legends 2020 contrôles, basketball legends 2020 gameplay, jouer basketball legends en ligne, jeux débloqués basketball legends 2020">
+    <meta name="keywords" content="basketball legends 2020, basketball legends 2020 sbloccato, basketball legends 2020 unblocked 76, basketball legends 2020 unblocked 66, basketball legends 2020 gratis, come schiacciare basketball legends 2020, basketball legends 2020 controlli, basketball legends 2020 gameplay, giocare basketball legends online, giochi sbloccati basketball legends 2020">
     <meta name="news_keywords" content="basketball legends 2020, basketball legends 2020 unblocked, basketball legends 2020 free, how to play basketball legends 2020">
     
     <!-- Canonical URL -->
@@ -57,10 +72,14 @@
     <meta name="mobile-web-app-capable" content="yes">
     
     <!-- Stylesheets -->
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css">
+    <!-- Non-critical CSS - Deferred loading -->
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css"></noscript>
     <link rel="preload" href="/themes/slope-game/rs/css/style.css" as="style">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css">
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/style.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css"></noscript>
     
     <!-- Google Analytics -->
     
@@ -207,7 +226,11 @@
 
 
 
-<link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css">
+<link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css"></noscript>
+
+<link rel="stylesheet" href="/themes/slope-game/rs/css/page-overrides.css" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/page-overrides.css"></noscript>
 
 
 
@@ -896,13 +919,25 @@ button:hover {
 
 </style>
 
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE"></script>
+<!-- Google Analytics - Deferred loading for better performance -->
 <script>
+  // Defer Google Analytics loading until after page load
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-70KM5C3PQE');
+  
+  window.addEventListener('load', function() {
+    // Load gtag.js after page load
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    // Initialize GA after script loads
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'G-70KM5C3PQE');
+    };
+  });
 </script>
 </head>
 <body class=" ">
@@ -1169,9 +1204,9 @@ button:hover {
     </script>
 
     <!-- jQuery -->
-    <script src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
-    <script src="/themes/slope-game/rs/js/lazyload.min.js"></script>
-    <script src="/themes/slope-game/rs/js/script.js"></script>
+    <script defer src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script>
+    <script defer src="/themes/slope-game/rs/js/lazyload.min.js"></script>
+    <script defer src="/themes/slope-game/rs/js/script.js"></script>
     
     <!-- Initialize Lazy Loading -->
     <script>

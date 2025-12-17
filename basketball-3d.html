@@ -4,6 +4,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <!-- Preconnect to Google Fonts for faster font loading -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <title>Basketball 3D - Play Free Online Basketball Game Unblocked</title>
     <meta name="description" content="Play Basketball 3D unblocked! A physics-based 3D basketball game that challenges your timing, accuracy, and dexterity. Navigate the ball into the hoop!">
     <meta name="keywords" content="basketball 3d, 3d basketball game, physics basketball, free basketball game online">
@@ -15,12 +18,29 @@
     <meta property="og:image" content="https://basketballlegends2020.online/cache/data/image/game/basketball-3d.jpg" />
     <meta property="og:description" content="Play Basketball 3D unblocked! A physics-based 3D basketball game." />
     <meta property="og:site_name" content="Basketball Legends 2020" />
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css">
-    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css">
+    <!-- Non-critical CSS - Deferred loading -->
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/normalize.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/style.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/style.css"></noscript>
+    <link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css" media="print" onload="this.media='all'">
+    <noscript><link rel="stylesheet" href="/themes/slope-game/rs/css/basketball-legends-theme.css"></noscript>
     <link rel="stylesheet" href="/themes/slope-game/rs/css/new-layout.css">
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-DT2XM1TMPM"></script>
-    <script>window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments);}gtag('js',new Date());gtag('config','G-DT2XM1TMPM');</script>
+    <!-- Google Analytics - Deferred loading for better performance -->
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      window.addEventListener('load', function() {
+        var script = document.createElement('script');
+        script.src = 'https://www.googletagmanager.com/gtag/js?id=G-DT2XM1TMPM';
+        script.async = true;
+        document.head.appendChild(script);
+        script.onload = function() {
+          gtag('js', new Date());
+          gtag('config', 'G-DT2XM1TMPM');
+        };
+      });
+    </script>
     <script type="application/ld+json">{"@context":"https://schema.org","@type":"VideoGame","name":"Basketball 3D","description":"A physics-based 3D basketball game that challenges your timing and accuracy.","genre":"Sports","gamePlatform":"Web Browser","applicationCategory":"Game","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}</script>
 <style>
 body{background:#F5F7FA!important;color:#2C3E50!important;font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Roboto',sans-serif!important}
@@ -77,13 +97,25 @@ body::before{display:none!important}.container,.page{background:transparent!impo
 }
 
 </style>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE"></script>
+<!-- Google Analytics - Deferred loading for better performance -->
 <script>
+  // Defer Google Analytics loading until after page load
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-  gtag('config', 'G-70KM5C3PQE');
+  
+  window.addEventListener('load', function() {
+    // Load gtag.js after page load
+    var script = document.createElement('script');
+    script.src = 'https://www.googletagmanager.com/gtag/js?id=G-70KM5C3PQE';
+    script.async = true;
+    document.head.appendChild(script);
+    
+    // Initialize GA after script loads
+    script.onload = function() {
+      gtag('js', new Date());
+      gtag('config', 'G-70KM5C3PQE');
+    };
+  });
 </script>
 </head>
 <body><div class="page"><div class="page__wrapper">
@@ -229,5 +261,5 @@ body::before{display:none!important}.container,.page{background:transparent!impo
 </div></div></section>
 <footer style="background:#FFF;border-top:1px solid #E1E8ED;padding:32px 0 24px;margin-top:48px"><div class="container"><div class="footer__copir" style="color:#5A6C7D">© 2024 <a href="/" style="color:#FF6B35;font-weight:600">Basketball Legends 2020</a>. All rights reserved.</div></div></footer>
 </div></div>
-<script src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script><script src="/themes/slope-game/rs/js/lazyload.min.js"></script><script src="/themes/slope-game/rs/js/script.js"></script>
+<script defer src="/themes/slope-game/rs/js/jquery-3.4.1.min.js"></script><script defer src="/themes/slope-game/rs/js/lazyload.min.js"></script><script defer src="/themes/slope-game/rs/js/script.js"></script>
 </body></html>
