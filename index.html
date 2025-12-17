@@ -83,7 +83,7 @@
     .game-item{background:transparent;border:none;border-radius:var(--radius-md);overflow:visible;transition:transform 0.2s ease;display:block;cursor:pointer}.game-item:hover{transform:translateY(-4px)}
     .game-item__img{position:relative;padding-top:67%;overflow:hidden;background:#FFFFFF;border-radius:var(--radius-md);border:1px solid var(--border-color);box-shadow:var(--shadow-sm)}.game-item__img img{position:absolute;top:0;left:0;width:100%;height:100%;object-fit:cover;transition:transform 0.3s ease}.game-item:hover .game-item__img img{transform:scale(1.05)}.game-item:hover .game-item__img{box-shadow:0 8px 24px rgba(0,0,0,0.15)}
     .game-item__info{padding:8px 0 0 0;background:transparent}.game-item__title{font-size:14px;font-weight:600;color:var(--text-primary);margin:0;line-height:1.4;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;text-align:center}.game-item__text,.game-item__bottom,.game-item__play{display:none}
-    .lazy{opacity:0;transition:opacity 0.3s}.lazy.loaded,.lazy[data-loaded="true"]{opacity:1}
+    .lazy{opacity:1;transition:opacity 0.3s}.lazy.loaded,.lazy[data-loaded="true"]{opacity:1}
     @media(max-width:768px){.games{grid-template-columns:repeat(auto-fill,minmax(140px,1fr));gap:20px}.game-item__title{font-size:13px}.bx-menu{display:block}.nav-links{position:fixed;top:0;left:-100%;width:80%;height:100vh;background:#FFFFFF;flex-direction:column;padding:60px 20px 20px;z-index:999;transition:left 0.3s ease}.nav-links.show_mobile{left:0}.list_links{flex-direction:column;width:100%}.list_links li{width:100%}.list_links li a{padding:12px 16px}.navbar .logo img{height:40px}}
     @media(max-width:480px){.games{grid-template-columns:repeat(2,1fr);gap:16px}.navbar .logo img{height:32px}}
     </style>
@@ -422,6 +422,15 @@
 				<div class="info_text title_block">Basketball Games</div>
 			</div>
 			<div class="games">
+				<!-- Malayali Dino - Featured Game -->
+				<a class="game-item" href="/malayali-dino.html" title="Malayali Dino">
+					<div class="game-item__img">
+						<img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/malayali-dino-m200x134.jpg" width="200" height="134" loading="lazy" title="Malayali Dino" alt="Malayali Dino">
+					</div>
+					<div class="game-item__info">
+						<div class="game-item__title">Malayali Dino</div>
+					</div>
+				</a>
 				<!-- Basketball Stars -->
 				<a class="game-item" href="/basketball-stars.html" title="Basketball Stars">
 					<div class="game-item__img">
@@ -797,6 +806,20 @@
             </div>
             <div class="game-item__info">
                 <div class="game-item__title">Dinosaur Game</div>
+                <div class="game-item__text text"></div>
+            </div>
+            <div class="game-item__bottom">
+                <div class="game-item__play">Play</div>
+            </div>
+        </a>
+    
+        <!-- Malayali Dino - New trending game -->
+        <a class="game-item" href="/malayali-dino.html" title="Malayali Dino">
+            <div class="game-item__img">
+                <img class="lazy" src="/themes/slope-game/rs/imgs/pixel.png" data-src="/cache/data/image/game/malayali-dino-m200x134.jpg" width="200" height="134" loading="lazy" title="Malayali Dino" alt="Malayali Dino img">
+            </div>
+            <div class="game-item__info">
+                <div class="game-item__title">Malayali Dino</div>
                 <div class="game-item__text text"></div>
             </div>
             <div class="game-item__bottom">
@@ -1255,12 +1278,37 @@ function scrollToDiv(element) {
     }
 }
 
-// Initialize lazy loading and fullscreen functionality after DOM is ready
-document.addEventListener('DOMContentLoaded', function() {
-    // Initialize lazy loading
+// Initialize lazy loading and fullscreen functionality after all scripts loaded
+window.addEventListener('load', function() {
+    // Initialize lazy loading with IntersectionObserver for better performance
     var lazyImages = document.querySelectorAll('.lazy');
-    if (lazyImages.length && typeof lazyload === 'function') {
-        lazyload(lazyImages);
+    if (lazyImages.length) {
+        if ('IntersectionObserver' in window) {
+            var imageObserver = new IntersectionObserver(function(entries) {
+                entries.forEach(function(entry) {
+                    if (entry.isIntersecting) {
+                        var img = entry.target;
+                        if (img.dataset.src) {
+                            img.src = img.dataset.src;
+                            img.classList.add('loaded');
+                        }
+                        imageObserver.unobserve(img);
+                    }
+                });
+            }, { rootMargin: '50px 0px' });
+            
+            lazyImages.forEach(function(img) {
+                imageObserver.observe(img);
+            });
+        } else {
+            // Fallback for older browsers
+            lazyImages.forEach(function(img) {
+                if (img.dataset.src) {
+                    img.src = img.dataset.src;
+                    img.classList.add('loaded');
+                }
+            });
+        }
     }
     
     // Fullscreen functionality
